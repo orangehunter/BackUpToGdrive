@@ -1,0 +1,20 @@
+{
+  "appenders": [
+    {
+      "type": "console"
+    },
+    {
+      "category": "sysLog",
+      "type": "file",
+      "filename": "./logs/system.log",
+      "maxLogSize": 1048576,
+      "layout": {"type": "basic"},
+      "backups": 5
+    }
+  ],
+  "levels": {
+    "sysLog": "info"
+  },
+  "replaceConsole": true,
+  "lineDebug": false
+}
